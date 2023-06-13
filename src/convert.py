@@ -35,14 +35,12 @@ def convert_and_upload_supervisely_project(
                 curr_label = sly.Label(curr_bitmap, obj_class)
                 labels.append(curr_label)
 
-        tag_data_path = os.path.join(tags_data_path, get_file_name(image_path) + ".txt")
-        with open(tag_data_path) as f:
+        meta_path = os.path.join(tags_data_path, get_file_name(image_path) + ".txt")
+        with open(meta_path) as f:
             content = f.read()
-            tag_diagnosis = sly.Tag(meta=tag_meta, value=content)
+            meta = {"diagnosis": content}
 
-        return sly.Annotation(
-            img_size=(img_height, img_wight), labels=labels, img_tags=[tag_diagnosis]
-        )
+        return sly.Annotation(img_size=(img_height, img_wight), labels=labels), meta
 
     images_path = os.path.join(dataset_path, images_folder_name)
     images_names = os.listdir(images_path)
@@ -66,9 +64,15 @@ def convert_and_upload_supervisely_project(
             os.path.join(images_path, image_name) for image_name in img_names_batch
         ]
 
-        anns_batch = [create_ann(image_path) for image_path in images_pathes_batch]
+        anns_batch, meta_batch = [], []
+        for image_path in images_pathes_batch:
+            ann, meta = create_ann(image_path)
+            anns_batch.append(ann)
+            meta_batch.append(meta)
 
-        img_infos = api.image.upload_paths(dataset.id, img_names_batch, images_pathes_batch)
+        img_infos = api.image.upload_paths(
+            dataset.id, img_names_batch, images_pathes_batch, metas=meta_batch
+        )
         img_ids = [im_info.id for im_info in img_infos]
 
         api.annotation.upload_anns(img_ids, anns_batch)
