@@ -1,11 +1,12 @@
-If you make use of the Synthetic RGB-D data for plant segmentation data, please cite the following reference (to be prepared after the challenge workshop) in any publications:
+If you make use of the Chest Xray Masks and Labels data, please cite the following reference:
 
-```
-@misc{synthetic-plants,
-	author = "EL BAHA FAROUK",
-	title = "Synthetic RGB-D data for plant segmentation",
-	howpublished = "https://www.kaggle.com/datasets/harlequeen/synthetic-rgbd-images-of-plants"
+```bibtex
+@misc{Chest Xray Masks and Labels,
+	author = "NIKHIL PANDEY",
+	title = "Chest Xray Masks and Labels",
+	year = {2019},
+	howpublished = "https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels"
 }
 ```
 
-[🔗 Source](https://www.kaggle.com/datasets/harlequeen/synthetic-rgbd-images-of-plants).
+[🔗 Source](https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels)

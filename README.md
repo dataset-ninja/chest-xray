@@ -1,3 +1,3 @@
-# DATASET_NAME
+# Chest Xray Masks and Labels
 
-DATASET_NAME
+Chest Xray Masks and Labels is a dataset for instance segmentation tasks.
