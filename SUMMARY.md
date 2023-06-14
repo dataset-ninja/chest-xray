@@ -1,4 +1,4 @@
-**Chest Xray Masks and Labels** (Chest Xray Masks and Labels) is a dataset for instance segmentation tasks. It is used in the medical industry.
+**Chest Xray Masks and Labels** is a dataset for instance segmentation tasks. It is used in the medical industry.
 
 The dataset consists of 800 images with 278 labeled objects belonging to 1 single class (*lung*).
 
