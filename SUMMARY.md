@@ -6,4 +6,4 @@ Each image in the Chest Xray Masks and Labels dataset has pixel-level instance s
 
 Here is the visualized example grid with annotations:
 
-<img src="https://github.com/dataset-ninja/chest-xray/raw/main/visualizations/horizontal_grid.png">
+[Dataset classes](https://github.com/dataset-ninja/chest-xray/raw/main/visualizations/horizontal_grid.webm)
