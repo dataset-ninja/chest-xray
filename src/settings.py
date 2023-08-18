@@ -83,7 +83,8 @@ SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
     "origins of data": [
         "Montgomery County",
         "Shenzhen",
-    ]
+    ],
+    "__POSTTEXT__": 'Additionaly, every image has <span style="background-color: #ecdefc; padding: 2px 4px; border-radius: 4px;">info</span> with text medical recordings',
 }
 TAGS: List[str] = None
 
