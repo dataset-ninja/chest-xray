@@ -23,7 +23,7 @@ LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
 CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
@@ -33,7 +33,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 364102
+PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/chest-xray"
@@ -50,12 +50,12 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = "undefined"
-CITATION_URL: Optional[str] = "undefined"
-AUTHORS: Optional[List[str]] = ["undefined"]
+PAPER: Optional[str] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/"
+CITATION_URL: Optional[str] = None
+AUTHORS: Optional[List[str]] = ["Stefan Jaeger", "Sema Candemir", "Sameer Antani", "Yì-Xiáng J. Wáng", "Pu-Xuan Lu" , "George Thoma"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "undefined"
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = "undefined"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["National Institutes of Health, USA", "The Chinese University of Hong Kong, China", "The Shenzhen No. 3 People's Hospital, China"]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.nih.gov/", "https://www.cuhk.edu.hk/", "https://www.szhospital.com/"]
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: List[str] = None
