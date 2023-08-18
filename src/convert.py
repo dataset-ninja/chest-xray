@@ -74,12 +74,12 @@ def convert_and_upload_supervisely_project(
     tags_data_path = os.path.join(dataset_path, tag_data_folder_name)
 
     obj_class_healthy = sly.ObjClass("healthy lung", sly.Bitmap)
-    obj_class_tuberculous = sly.ObjClass("tuberculous lung", sly.Bitmap)
+    obj_class_tuberculous = sly.ObjClass("tuberculosis lung", sly.Bitmap)
     name_to_class = {"0.png": obj_class_healthy, "1.png": obj_class_tuberculous}
 
     tag_meta = sly.TagMeta("info", sly.TagValueType.ANY_STRING)
     tag_montgomery = sly.TagMeta("Montgomery County", sly.TagValueType.NONE)
-    tag_shenzhen = sly.TagMeta("The Shenzhen set", sly.TagValueType.NONE)
+    tag_shenzhen = sly.TagMeta("Shenzhen", sly.TagValueType.NONE)
 
     source_to_tag = {"CHNCXR": tag_shenzhen, "MCUCXR": tag_montgomery}
 

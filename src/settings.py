@@ -57,7 +57,11 @@ AUTHORS: Optional[List[str]] = ["Stefan Jaeger", "Sema Candemir", "Sameer Antani
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["National Institutes of Health, USA", "The Chinese University of Hong Kong, China", "The Shenzhen No. 3 People's Hospital, China"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.nih.gov/", "https://www.cuhk.edu.hk/", "https://www.szhospital.com/"]
 
-SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
+    "origins of data":[
+        "Montgomery County", "Shenzhen",
+    ]
+}
 TAGS: List[str] = None
 
 ##################################
