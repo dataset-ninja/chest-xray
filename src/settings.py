@@ -24,7 +24,11 @@ LICENSE: License = License.CC0_1_0()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Medical()]
 CATEGORY: Category = Category.Medical()
 
-CV_TASKS: List[CVTask] = [CVTask.InstanceSegmentation(), CVTask.SemanticSegmentation(), CVTask.ObjectDetection()]
+CV_TASKS: List[CVTask] = [
+    CVTask.InstanceSegmentation(),
+    CVTask.SemanticSegmentation(),
+    CVTask.ObjectDetection(),
+]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
@@ -52,15 +56,33 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[str] = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/"
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = ["Stefan Jaeger", "Sema Candemir", "Sameer Antani", "Yì-Xiáng J. Wáng", "Pu-Xuan Lu" , "George Thoma"]
+CITATION_URL: Optional[
+    str
+] = "https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels"
+AUTHORS: Optional[List[str]] = [
+    "Stefan Jaeger",
+    "Sema Candemir",
+    "Sameer Antani",
+    "Yì-Xiáng J. Wáng",
+    "Pu-Xuan Lu",
+    "George Thoma",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["National Institutes of Health, USA", "The Chinese University of Hong Kong, China", "The Shenzhen No. 3 People's Hospital, China"]
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.nih.gov/", "https://www.cuhk.edu.hk/", "https://www.szhospital.com/"]
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "National Institutes of Health, USA",
+    "The Chinese University of Hong Kong, China",
+    "The Shenzhen No. 3 People's Hospital, China",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.nih.gov/",
+    "https://www.cuhk.edu.hk/",
+    "https://www.szhospital.com/",
+]
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = {
-    "origins of data":[
-        "Montgomery County", "Shenzhen",
+    "origins of data": [
+        "Montgomery County",
+        "Shenzhen",
     ]
 }
 TAGS: List[str] = None
