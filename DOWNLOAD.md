@@ -1,6 +1,6 @@
 Dataset **Chest Xray Masks and Labels** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/8hl6tapvjsobqj6iqlyp8/chest-xray-masks-and-labels-DatasetNinja.tar?rlkey=71st43323oq6jrbozpiz69411&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzE1NThfQ2hlc3QgWHJheSBNYXNrcyBhbmQgTGFiZWxzL2NoZXN0LXhyYXktbWFza3MtYW5kLWxhYmVscy1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJ5ZzJ5bXF0NnpmdmM0cVhjUVFTWUErNWFReGk1a1ZxcHlBSnBud3UxR1VVPSJ9)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
